@@ -8,6 +8,9 @@ without needing to change how your own SSL certificate is served.
 
 This module has been tested with Node.js 0.10 and above.
 
+You may also be interested in [securing access to your origin
+servers](https://medium.com/@novemberborn/cloudflare-and-origin-servers-for-the-rightfully-paranoid-a3a23ce27567).
+
 ## Installation
 
 ```shell

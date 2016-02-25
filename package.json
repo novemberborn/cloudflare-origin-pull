@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/novemberborn/cloudflare-origin-pulls.git"
+    "url": "git+https://github.com/novemberborn/cloudflare-origin-pull.git"
   },
   "keywords": [
     "cloudflare",
@@ -31,9 +31,9 @@
   "author": "Mark Wubben (https://novemberborn.net/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/novemberborn/cloudflare-origin-pulls/issues"
+    "url": "https://github.com/novemberborn/cloudflare-origin-pull/issues"
   },
-  "homepage": "https://github.com/novemberborn/cloudflare-origin-pulls#readme",
+  "homepage": "https://github.com/novemberborn/cloudflare-origin-pull#readme",
   "dependencies": {
     "asn1.js": "^4.5.0"
   },

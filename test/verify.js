@@ -33,36 +33,36 @@ test.beforeEach(() => {
   clock.setSystemTime(dates.valid)
 })
 
-test('the certificate is valid', (t) => {
+test('the certificate is valid', t => {
   t.true(verify(certs['cloudflare-origin-pull']))
 })
 
-test('there is no certificate', (t) => {
+test('there is no certificate', t => {
   t.false(verify(null))
 })
 
-test('the certificate has no raw data', (t) => {
+test('the certificate has no raw data', t => {
   t.false(verify({}))
 })
 
-test('the certificate is signed with an unexpected signature', (t) => {
+test('the certificate is signed with an unexpected signature', t => {
   t.false(verify(certs['bad-algorithm']))
 })
 
-test('the certificate could not be parsed', (t) => {
+test('the certificate could not be parsed', t => {
   t.false(verify(certs['bad-data']))
 })
 
-test('the signature could not be verified', (t) => {
+test('the signature could not be verified', t => {
   t.false(verify(certs['bad-signature']))
 })
 
-test('the certificate is not yet valid', (t) => {
+test('the certificate is not yet valid', t => {
   clock.setSystemTime(dates.invalidBefore)
   t.false(verify(certs['cloudflare-origin-pull']))
 })
 
-test('the certificate is no longer valid', (t) => {
+test('the certificate is no longer valid', t => {
   clock.setSystemTime(dates.invalidAfter)
   t.false(verify(certs['cloudflare-origin-pull']))
 })

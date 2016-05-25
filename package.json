@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@novemberborn/as-i-preach": "^2.0.1",
-    "ava": "^0.14.0",
+    "ava": "^0.15.0",
     "babel-cli": "^6.5.1",
     "babel-preset-es2015": "^6.5.0",
     "lolex": "^1.4.0",

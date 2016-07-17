@@ -1,6 +1,6 @@
 import { createVerify } from 'crypto'
 
-import { Certificate, TBSCertificate } from './lib/rfc5280-simplified'
+import { Certificate, TBSCertificate } from './rfc5280-simplified'
 
 // CA from <https://support.cloudflare.com/hc/en-us/articles/204899617>.
 const originPullCa = `-----BEGIN CERTIFICATE-----

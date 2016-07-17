@@ -1,9 +1,5 @@
 .node-version
 .nyc_output
 node_modules
-
 /coverage
-
-/index.js
-/index.js.map
-/lib
+/dist

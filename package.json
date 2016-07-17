@@ -4,7 +4,8 @@
   "description": "Verify that TLS peer certificates came from CloudFlare",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "clean": "rimraf dist",

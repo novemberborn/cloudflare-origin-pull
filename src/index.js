@@ -82,7 +82,7 @@ function tryVerify (rawBytes) {
   }
   // Make sure the certificate was signed by CloudFlare's origin pull
   // certificate authority.
-  const verify = createVerify('RSA-SHA512')
-  verify.update(TBSCertificate.encode(tbsCertificate, 'der'))
-  return verify.verify(originPullCa, signature)
+  const verifier = createVerify('RSA-SHA512')
+  verifier.update(TBSCertificate.encode(tbsCertificate, 'der'))
+  return verifier.verify(originPullCa, signature)
 }

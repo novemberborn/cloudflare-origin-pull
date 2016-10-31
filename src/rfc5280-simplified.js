@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import asn1 from 'asn1.js'
 
 // Definitions from

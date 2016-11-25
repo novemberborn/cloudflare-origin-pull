@@ -12,7 +12,7 @@ const certs = [
   'bad-signature.cert',
   'cloudflare-origin-pull.cert'
 ].reduce((acc, file) => {
-  const cert = readFileSync(join('fixtures', file))
+  const cert = readFileSync(join(__dirname, 'fixtures', file))
   return Object.defineProperty(acc, basename(file, '.cert'), {
     get () {
       const raw = new Buffer(cert.length)

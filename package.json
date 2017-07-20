@@ -54,7 +54,8 @@
   "greenkeeper": {
     "ignore": [
       "@novemberborn/as-i-preach",
-      "ava"
+      "ava",
+      "lolex"
     ]
   },
   "nyc": {
